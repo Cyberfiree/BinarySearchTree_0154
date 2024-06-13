@@ -44,6 +44,8 @@ public:
 
 		if (parent == nullptr) //if the parent is NULL (tree is empty) // Jika ROOT adalah NULL (pohon kosong)
 		{
+			ROOT = newNode; //Mark the new node as ROOT
+			return; //exit
 		}
 	}
 };
