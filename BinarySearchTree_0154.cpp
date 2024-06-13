@@ -44,17 +44,17 @@ public:
 
 		if (parent == nullptr) //if the parent is NULL (tree is empty) // Jika ROOT adalah NULL (pohon kosong)
 		{
-			ROOT = newNode; //Mark the new node as ROOT
+			ROOT = newNode; //Mark the new node as ROOT // Tandai node baru sebagai ROOT
 			return; //exit
 		}
 
-		if (element < parent->info) //if the value in the data field of the new node is less than that of the...
+		if (element < parent->info) //if the value in the data field of the new node is less than that of the... // Jika nilai dalam field data dari node baru lebih kecil dari ...
 		{
-			parent->leftchild = newNode; //make the left child of the parent point to the new node
+			parent->leftchild = newNode; //make the left child of the parent point to the new node // Buat leftchild dari parent menunjuk ke node baru
 		}
-		else if (element > parent->info) // if the value in the data field of the new node is greter than that ...
+		else if (element > parent->info) // if the value in the data field of the new node is greter than that ... // Jika nilai dalam field data dari node baru lebih besar dari ...
 		{
-			parent->rightchild = newNode; //Make the right child of the parent point to the new node
+			parent->rightchild = newNode; //Make the right child of the parent point to the new node  // Buat rightchild dari parent menunjuk ke node baru
 		}
 	}
 };
