@@ -33,6 +33,7 @@ public:
 
 	void insert(string element) //insert a node in the binary search tree
 	{
+		Node* newNode = new Node(element, nullptr, nullptr); //Allocate memory for the new node
 	}
 };
 int main()
