@@ -121,4 +121,15 @@ public:
 };
 int main()
 {
+	BinaryTree x; // Membuat objek BinaryTree
+	while (true)
+	{
+		cout << "\nMenu" << endl;
+		cout << "1. Implement insert operation" << endl;
+		cout << "2. Perform inorder traversial" << endl;
+		cout << "3. Perform preorder traversial" << endl;
+		cout << "4. Perform postorder traversial" << endl;
+		cout << "5. Exit" << endl;
+		cout << "\nEnter your cboice (1-5) : ";
+	}
 }
