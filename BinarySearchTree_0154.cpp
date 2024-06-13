@@ -54,6 +54,7 @@ public:
 		}
 		else if (element > parent->info) // if the value in the data field of the new node is greter than that ...
 		{
+			parent->rightchild = newNode; //Make the right child of the parent point to the new node
 		}
 	}
 };
