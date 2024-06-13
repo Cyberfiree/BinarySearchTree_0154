@@ -12,7 +12,7 @@ public:
 	Node* leftchild;
 	Node* rightchild;
 
-	//constructor for the node class
+	//constructor for the node class  // Constructor untuk kelas Node
 	Node(string i, Node* l, Node* r)
 	{
 		info = 1;
@@ -28,21 +28,21 @@ public:
 
 	BinaryTree()
 	{
-		ROOT = nullptr; //initializing ROOT to null
+		ROOT = nullptr; //initializing ROOT to null // Inisialisasi ROOT ke null
 	}
 
-	void insert(string element) //insert a node in the binary search tree
+	void insert(string element) //insert a node in the binary search tree //masukkan node ke dalam pohon pencarian biner
 	{
-		Node* newNode = new Node(element, nullptr, nullptr); //Allocate memory for the new node
-		newNode->info = element; // Assign value to the data field of the new node
-		newNode->leftchild = nullptr; //Make the left child of the new node point to NULL
-		newNode->rightchild = nullptr; //Make the right child of the new node point to NULL
+		Node* newNode = new Node(element, nullptr, nullptr); //Allocate memory for the new node // Alokasi memori untuk node baru
+		newNode->info = element; // Assign value to the data field of the new node // Berikan nilai ke data field dari node baru
+		newNode->leftchild = nullptr; //Make the left child of the new node point to NULL // Buat leftchild dari node baru menunjuk ke NULL
+		newNode->rightchild = nullptr; //Make the right child of the new node point to NULL // Buat rightchild dari node baru menunjuk ke NULL
 
 		Node* parent = nullptr;
 		Node* currentNode = nullptr;
-		search(element, parent, currentNode); //Locate the node which will be the parent of the node to be insearch
+		search(element, parent, currentNode); //Locate the node which will be the parent of the node to be insearch //Temukan node yang akan menjadi induk dari node yang akan dicari
 
-		if (parent == nullptr) //if the parent is NULL (tree is empty)
+		if (parent == nullptr) //if the parent is NULL (tree is empty) // Jika ROOT adalah NULL (pohon kosong)
 		{
 		}
 	}
