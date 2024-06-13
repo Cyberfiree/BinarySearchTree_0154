@@ -20,6 +20,11 @@ public:
 		rightchild = r;
 	}
 };
+
+class BinaryTree
+{
+public:
+};
 int main()
 {
 }
