@@ -52,6 +52,9 @@ public:
 		{
 			parent->leftchild = newNode; //make the left child of the parent point to the new node
 		}
+		else if (element > parent->info) // if the value in the data field of the new node is greter than that ...
+		{
+		}
 	}
 };
 int main()
