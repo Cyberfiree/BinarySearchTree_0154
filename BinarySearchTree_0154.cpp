@@ -131,5 +131,48 @@ int main()
 		cout << "4. Perform postorder traversial" << endl;
 		cout << "5. Exit" << endl;
 		cout << "\nEnter your cboice (1-5) : ";
+
+
+		char ch;
+		cin >> ch;
+		cout << endl;
+
+		switch (ch)
+		{
+		case '1':
+		{
+			cout << "Enter a word : ";
+			string word;
+			cin >> word;
+			x.insert(word);
+			break;
+		}
+
+		case '2':
+		{
+			x.inorder(x.ROOT);
+			break;
+		}
+		
+		case '3':
+		{
+			x.preorder(x.ROOT);
+			break;
+		}
+
+		case '4':
+		{
+			x.postorder(x.ROOT);
+			break;
+		}
+
+		case '5':
+		{
+			return 0;
+		}
+
+		default:
+			cout << "Pilihan tidak valid. Silakan masukkan pilihan antara 1-5." << endl;
+		}
 	}
 }
