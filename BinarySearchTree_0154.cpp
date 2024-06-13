@@ -73,7 +73,7 @@ public:
 		}
 	}
 
-	// Metode inorder traversal untuk menampilkan isi pohon
+	// Metode inorder traversal untuk menampilkan isi pohon //infonya di tengah
 	void inorder(Node* ptr)
 	{ 
 		if (ROOT == nullptr)
@@ -86,6 +86,21 @@ public:
 			inorder(ptr->leftchild);
 			cout << ptr->info << " ";
 			inorder(ptr->rightchild);
+		}
+	}
+
+	// Metode preorder traversal untuk menampilkan isi pohon //infonya diatas
+	void preorder(Node* ptr)
+	{
+		if (ROOT == nullptr)
+		{
+			cout << "Tree is empty" << endl;
+			return;
+		}
+		if (ptr != nullptr) {
+			cout << ptr->info << " "; // Tampilkan nilai node saat ini
+			preorder(ptr->leftchild); // Traversal ke anak kiri
+			preorder(ptr->rightchild); // Traversal ke anak kanan
 		}
 	}
 };
