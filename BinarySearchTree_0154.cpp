@@ -72,6 +72,22 @@ public:
 				currentNode = currentNode->rightchild;
 		}
 	}
+
+	// Metode inorder traversal untuk menampilkan isi pohon
+	void inorder(Node* ptr)
+	{ 
+		if (ROOT == nullptr)
+		{
+			cout << "Tree is empty" << endl;
+			return;
+		}
+		if (ptr != nullptr)
+		{
+			inorder(ptr->leftchild);
+			cout << ptr->info << " ";
+			inorder(ptr->rightchild);
+		}
+	}
 };
 int main()
 {
