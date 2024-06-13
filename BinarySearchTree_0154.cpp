@@ -113,8 +113,8 @@ public:
 			return;
 		}
 		if (ptr != nullptr) {
-			preorder(ptr->leftchild); // Traversal ke anak kiri
-			preorder(ptr->rightchild); // Traversal ke anak kanan
+			postorder(ptr->leftchild); // Traversal ke anak kiri
+			postorder(ptr->rightchild); // Traversal ke anak kanan
 			cout << ptr->info << " "; // Tampilkan nilai node saat ini
 		}
 	}
