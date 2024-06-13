@@ -103,6 +103,21 @@ public:
 			preorder(ptr->rightchild); // Traversal ke anak kanan
 		}
 	}
+
+	// Metode postorder traversal untuk menampilkan isi pohon //infonya diakhir
+	void postorder(Node* ptr)
+	{
+		if (ROOT == nullptr)
+		{
+			cout << "Tree is empty" << endl;
+			return;
+		}
+		if (ptr != nullptr) {
+			preorder(ptr->leftchild); // Traversal ke anak kiri
+			preorder(ptr->rightchild); // Traversal ke anak kanan
+			cout << ptr->info << " "; // Tampilkan nilai node saat ini
+		}
+	}
 };
 int main()
 {
